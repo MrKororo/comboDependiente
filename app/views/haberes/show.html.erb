@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sueldo base:</strong>
+  <%= @habere.sueldo_base %>
+</p>
+
+<p>
+  <strong>Subcategorium:</strong>
+  <%= @habere.subcategorium.subcategoria %>
+</p>
+
+<%= link_to 'Edit', edit_habere_path(@habere) %> |
+<%= link_to 'Back', haberes_path %>

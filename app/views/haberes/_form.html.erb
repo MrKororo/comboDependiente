@@ -1,0 +1,19 @@
+<%= form_for(@habere) do |f| %>
+  
+  <div class="field">
+    <%= f.label :categorium_id %><br>
+    <%= collection_select(nil, :categorium_id, Categorium.order(:categoria), :id, :categoria, include_blank: :true) %>
+  </div>
+  <div class="field">
+    <%= f.label :subcategorium_id %><br>
+    <%= grouped_collection_select(:habere, :subcategorium_id, Categorium.order(:categoria), :subcategorium, :categoria, :id, :subcategoria, include_blank: :true) %>
+  </div>
+  <div class="field">
+    <%= f.label :sueldo_base %><br>
+    <%= f.number_field :sueldo_base %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

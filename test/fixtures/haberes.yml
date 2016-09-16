@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sueldo_base: 1
+  subcategorium_id: 
+
+two:
+  sueldo_base: 1
+  subcategorium_id: 
